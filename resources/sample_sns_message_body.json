@@ -1,0 +1,11 @@
+{ 
+  "MessageId":"_sample_sns_message_body_",
+	 "Type":"Notification",
+	 "TopicArn":"arn:aws:sns:us-east-0:000000000:_sample_sns_message_body_",
+	 "Message":"THIS IS THE BODY",
+	 "Timestamp":"2019-07-12T01:02:03.985Z",
+	 "SignatureVersion":"1",
+	 "Signature":"JuD7GbRWKdnFZJPQB5bfhXlytdeO1d22hLPeZze1g90JVfgFjyNRkZhuPnzGYPv7vgBqPJ3d2y0P/qOlds2JJQF9UTuyLeviY2hU0e6XxjRqqhfS4QpTSet8u8d2uWNy5GNuCKd3E6V1dgtP9vTmNFCON3P8xGyoMphwnt8DCJaGEHPJPdvI/bs+EKvTVDORRIgH+gpmGRqr493wXDFo5j5gXjwPzf9d3X384HGj+zjFQvs83qSyRomjRyFh3ooxYeNJTxF2CKcjcyalXNROtXsr6PpBp1am97xkCiHIPT/+r7/ms2fu2k0mdCU0/NleWLmE3qFX3UAB3n/1WZG2tg==",
+	 "SigningCertURL":"https://sns.us-east-1.amazonaws.com/SimpleNotificationService-signing.pem",
+	 "UnsubscribeURL":"sns-topic-uri"
+}

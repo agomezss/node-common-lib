@@ -1,0 +1,45 @@
+
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "attach",
+			"name": "Attach by Process ID",
+			"processId": "${command:PickProcess}",
+			"skipFiles": [
+				"${workspaceFolder}/node_modules/nodejs-common-lib/*.ts",
+				"${workspaceFolder}/node_modules/nodejs-common-lib/*.js",
+				"${workspaceFolder}/node_modules/**/*.ts",
+				"${workspaceFolder}/node_modules/**/*.js",
+				"<node_internals>/**"
+			],
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Mocha Tests",
+			"program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+			"args": [
+				"--require", "ts-node/register",
+				"-u", "bdd",
+				"--timeout", "999999",
+				"--colors", "--recursive",
+				
+				"--use_strict",
+				"${file}"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"skipFiles": [
+				"${workspaceFolder}/node_modules/nodejs-common-lib/*.ts",
+				"${workspaceFolder}/node_modules/nodejs-common-lib/*.js",
+				"${workspaceFolder}/node_modules/**/*.ts",
+				"${workspaceFolder}/node_modules/**/*.js",
+				"<node_internals>/**",
+			],
+		}
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"Records": [
+		{
+			"messageId": "_sample_sqs_message_body_",
+			"receiptHandle": "",
+			"body": "THIS IS THE SNS OBJECT AS STRING",
+			"attributes": "",
+			"messageAttributes": {},
+			"md5OfBody": "f1bb252a4de4ba409d619c919a8e7d12",
+			"eventSource": "aws:sqs",
+			"eventSourceARN": "arn:aws:sns:us-east-0:999999999:_sample_sqs_message_body_",
+			"awsRegion": "us-east-1"
+		}
+	]
+}
+
